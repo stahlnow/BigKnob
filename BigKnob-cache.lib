@@ -113,22 +113,22 @@ DEF STEREO-JACK-SWITCHED-5-Pin J 0 40 Y Y 1 F N
 F0 "J" -200 220 60 H V C CNN
 F1 "STEREO-JACK-SWITCHED-5-Pin" -150 -220 60 H V C CNN
 F2 "" 30 305 60 H I C CNN
-F3 "http://www.neutrik.com/en/audio/plugs-and-jacks/stacking-jacks/nsj12hf-1" -110 -320 21 H I C BIN
+F3 "http://www.cui.com/product/components/connectors/audio/3.5-mm-jacks/sj1-352xn-series" -110 -320 21 H I C BIN
 DRAW
 S -410 -120 -50 130 0 1 0 f
 P 2 0 1 0 -380 60 -380 -10 N
-P 2 0 1 0 -360 0 -370 -10 N
-P 2 0 1 0 -320 50 -330 60 N
-P 2 0 1 0 -310 -50 -360 0 N
-P 2 0 1 0 -270 100 -320 50 N
+P 2 0 1 0 -350 50 -360 60 N
+P 2 0 1 0 -320 0 -330 -10 N
+P 2 0 1 0 -300 100 -350 50 N
+P 2 0 1 0 -270 -50 -320 0 N
 P 2 0 1 0 -250 -50 -260 -30 N
 P 2 0 1 0 -250 -50 -240 -30 N
 P 2 0 1 0 -250 0 -250 -50 N
 P 2 0 1 0 -250 50 -250 100 N
 P 2 0 1 0 -250 100 -260 80 N
 P 2 0 1 0 -250 100 -240 80 N
-P 2 0 1 0 -210 100 -270 100 N
-P 2 0 1 0 -170 -50 -310 -50 N
+P 2 0 1 0 -210 100 -300 100 N
+P 2 0 1 0 -170 -50 -270 -50 N
 P 2 0 1 0 -160 0 -250 0 N
 P 2 0 1 0 -160 50 -250 50 N
 P 3 0 1 0 -390 -10 -390 -100 -280 -100 N
