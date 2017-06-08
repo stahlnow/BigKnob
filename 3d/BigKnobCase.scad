@@ -17,37 +17,36 @@ v1.0 - born
 //3d(); // 3d model
 laser(); // uncomment for laser cutting
 
-thickness = 3; // thickness of material
-
-t_joints = false;   // make t-joints
-
-t_joints_front = false;
-t_joints_back = false;
-t_joints_right = true;
-t_joints_left = true;
-
-slots = true;      // make slots
-
 // define inner volume in mm
 length = 45;
 width = 80;
 height = 34+6+3; // thing + spacer + extra space
+
+thickness = 3; // thickness of material
+
+// slots configuration
+slots = true; // make slots?
 
 // overlap of top/bottom panels in mm
 overlap = 0;
 // round edge or not (applies only if overlap > 0)
 round_edges = true;
 
-// slots configuration
-num_slots_right_left = 2;
-slot_width_right_left = 10;
-slot_clearance_right_left = 5; // inset to slot >= 0
-
-num_slots_front_back = 3;       // number of slots
-slot_width_front_back = 10;     // width of slot
+// slots configuration55555
+num_slots_right_left = 2;       // number of slots >= 0
+slot_width_right_left = 10;     // width of slot
+slot_clearance_right_left = 5;  // inset to slot >= 0, add plus or minus 0.1 if last tooth is missing
+num_slots_front_back = 2;       
+slot_width_front_back = width;
 slot_clearance_front_back = 0.0;  // inset to slot >= 0, add plus or minus 0.1 if last tooth is missing
 
 // t-joints configuration
+t_joints_front = false;
+t_joints_back = false;
+t_joints_right = true;
+t_joints_left = true;
+t_joints_top_bottom = false;
+
 num_t_joints = 1; // number of t-joints
 bolt_size = 4; // bolt size in mm (M2,M3,M4,M5, etc.)
 bolt_length = 13; // bolt length in mm
@@ -66,18 +65,18 @@ nut_thickness = 3.5;// M3: 2.4, M4: 3.5 M5: 5.6
 laser_clearance = 5;
 
 // colors
-col_alpha = 0.9;
+col_alpha = 1.0;
 col_top =  "Yellow";
 col_bottom = "Yellow";
 col_left = "SlateGray";
 col_right = "SlateGray";
-col_front = "Pink";
+col_front = "SlateGray";
 col_back = "SlateGray";
 
 // number of fragments for round edges
 $fn = 100;
 
-glitch_corr = 0.001; // visual glitch correction
+glitch_corr = 0.001; // visual glitch correction (careful, this will mess with dimensions!)
 
 /************************************************* END OF USER VARIABLES */
 
@@ -305,10 +304,10 @@ module t_joints_holes_right_left() {
 }
 
 module t_joints_holes_top_bottom() {
-    if (t_joints_left)
+    if (t_joints_top_bottom) {
         t_joints_top_bottom(-(width+thickness)/2.0+joints_inset, true);
-    if (t_joints_right)
         t_joints_top_bottom((width+thickness)/2.0-joints_inset, true);
+    }
 }
 
 module t_joints_holes_front_back() {
@@ -341,6 +340,8 @@ module left() {
         // t-joints
         if (t_joints_left) {
             t_joints_right_left(-(width+thickness)/2);
+        }
+        if (t_joints_top_bottom) {
             t_joints_top_bottom(-(width+thickness)/2);
         }
         // cutouts
@@ -366,6 +367,8 @@ module right() {
         // t-joints
         if (t_joints_right) {
             t_joints_right_left((width+thickness)/2);
+        }
+        if (t_joints_top_bottom) {
             t_joints_top_bottom((width+thickness)/2);
         }
         // cutouts
