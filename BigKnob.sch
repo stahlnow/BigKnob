@@ -89,11 +89,17 @@ F 3 "http://www.neutrik.com/en/audio/plugs-and-jacks/stacking-jacks/nsj12hf-1" H
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 2700 3500 2700
+	3150 2700 3300 2700
 Wire Wire Line
-	3150 3600 3500 3600
+	3300 2700 3500 2700
 Wire Wire Line
-	3150 4750 3500 4750
+	3150 3600 3300 3600
+Wire Wire Line
+	3300 3600 3500 3600
+Wire Wire Line
+	3150 4750 3300 4750
+Wire Wire Line
+	3300 4750 3500 4750
 Text GLabel 3500 2700 2    60   Input ~ 0
 CHASSIS_GND
 Text GLabel 3500 3600 2    60   Input ~ 0
@@ -101,7 +107,9 @@ CHASSIS_GND
 Text GLabel 3500 4750 2    60   Input ~ 0
 CHASSIS_GND
 Wire Wire Line
-	3150 5650 3500 5650
+	3150 5650 3300 5650
+Wire Wire Line
+	3300 5650 3500 5650
 Text GLabel 3500 5650 2    60   Input ~ 0
 CHASSIS_GND
 Wire Notes Line
@@ -166,7 +174,9 @@ Wire Wire Line
 Wire Wire Line
 	3150 4550 4550 4550
 Wire Wire Line
-	4550 3600 4550 6500
+	4550 3600 4550 4550
+Wire Wire Line
+	4550 4550 4550 6500
 Text Notes 8950 3550 0    60   Italic 12
 LEFT
 Text Notes 1800 2650 0    60   Italic 12
@@ -176,7 +186,11 @@ RIGHT
 Wire Wire Line
 	7650 4400 7800 4400
 Wire Wire Line
-	7650 3400 7650 4900
+	7650 3400 7650 3900
+Wire Wire Line
+	7650 3900 7650 4400
+Wire Wire Line
+	7650 4400 7650 4900
 Wire Wire Line
 	7800 3900 7650 3900
 Connection ~ 7650 3900
@@ -186,7 +200,9 @@ Connection ~ 7650 4400
 Text Notes 8950 4450 0    60   Italic 12
 RIGHT
 Wire Wire Line
-	3150 2500 5000 2500
+	3150 2500 4450 2500
+Wire Wire Line
+	4450 2500 5000 2500
 Wire Wire Line
 	5000 2500 5000 3500
 Wire Wire Line
@@ -232,13 +248,17 @@ Wire Wire Line
 Text GLabel 7650 3400 0    60   Input ~ 0
 CHASSIS_GND
 Wire Wire Line
-	3150 3400 4800 3400
+	3150 3400 4550 3400
+Wire Wire Line
+	4550 3400 4800 3400
 Wire Wire Line
 	4800 3400 4800 4000
 Wire Wire Line
 	4800 4000 5000 4000
 Wire Wire Line
-	3150 5450 4800 5450
+	3150 5450 4450 5450
+Wire Wire Line
+	4450 5450 4800 5450
 Wire Wire Line
 	4800 5450 4800 4100
 Wire Wire Line
@@ -420,11 +440,11 @@ Wire Wire Line
 Wire Wire Line
 	6500 3250 6600 3250
 Wire Wire Line
-	5550 4300 6200 4300
+	5550 4300 6000 4300
 Wire Wire Line
-	6200 4300 6200 4550
+	6000 4300 6000 4550
 Wire Wire Line
-	6200 4550 6300 4550
+	6000 4550 6300 4550
 Wire Wire Line
 	5550 3800 6200 3800
 Wire Wire Line
@@ -438,7 +458,13 @@ Wire Wire Line
 Wire Wire Line
 	6950 4250 6500 4250
 Wire Wire Line
-	6100 3450 6100 5100
+	6100 3450 6100 3950
+Wire Wire Line
+	6100 3950 6100 4450
+Wire Wire Line
+	6100 4450 6100 4950
+Wire Wire Line
+	6100 4950 6100 5100
 Wire Wire Line
 	6100 3450 6300 3450
 Wire Wire Line
