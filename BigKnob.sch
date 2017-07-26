@@ -89,17 +89,11 @@ F 3 "http://www.neutrik.com/en/audio/plugs-and-jacks/stacking-jacks/nsj12hf-1" H
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 2700 3300 2700
+	3150 2700 3500 2700
 Wire Wire Line
-	3300 2700 3500 2700
+	3150 3600 3500 3600
 Wire Wire Line
-	3150 3600 3300 3600
-Wire Wire Line
-	3300 3600 3500 3600
-Wire Wire Line
-	3150 4750 3300 4750
-Wire Wire Line
-	3300 4750 3500 4750
+	3150 4750 3500 4750
 Text GLabel 3500 2700 2    60   Input ~ 0
 CHASSIS_GND
 Text GLabel 3500 3600 2    60   Input ~ 0
@@ -107,9 +101,7 @@ CHASSIS_GND
 Text GLabel 3500 4750 2    60   Input ~ 0
 CHASSIS_GND
 Wire Wire Line
-	3150 5650 3300 5650
-Wire Wire Line
-	3300 5650 3500 5650
+	3150 5650 3500 5650
 Text GLabel 3500 5650 2    60   Input ~ 0
 CHASSIS_GND
 Wire Notes Line
@@ -172,9 +164,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 4550 4550 4550
 Wire Wire Line
-	4550 3600 4550 4550
-Wire Wire Line
-	4550 4550 4550 6500
+	4550 3600 4550 6500
 Text Notes 9350 3550 0    60   Italic 12
 LEFT
 Text Notes 1800 2650 0    60   Italic 12
@@ -190,9 +180,7 @@ Wire Wire Line
 Text Notes 9350 4450 0    60   Italic 12
 RIGHT
 Wire Wire Line
-	3150 2500 4450 2500
-Wire Wire Line
-	4450 2500 5000 2500
+	3150 2500 5000 2500
 Wire Wire Line
 	5000 2500 5000 3500
 Wire Wire Line
@@ -238,17 +226,13 @@ Wire Wire Line
 Text GLabel 8050 3400 0    60   Input ~ 0
 CHASSIS_GND
 Wire Wire Line
-	3150 3400 4550 3400
-Wire Wire Line
-	4550 3400 4800 3400
+	3150 3400 4800 3400
 Wire Wire Line
 	4800 3400 4800 4000
 Wire Wire Line
 	4800 4000 5000 4000
 Wire Wire Line
-	3150 5450 4450 5450
-Wire Wire Line
-	4450 5450 4800 5450
+	3150 5450 4800 5450
 Wire Wire Line
 	4800 5450 4800 4100
 Wire Wire Line
