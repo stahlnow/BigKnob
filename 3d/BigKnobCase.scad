@@ -14,8 +14,8 @@ v1.0 - born
 /*********************************************** START OF USER VARIABLES */
 
 // what to build
-//3d(); // 3d model
-laser(); // uncomment for laser cutting
+3d(); // 3d model
+//laser(); // uncomment for laser cutting
 
 // define inner volume in mm
 length = 45;
